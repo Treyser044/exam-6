@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#1d1d1d]">
+    <div class="bg-[#2A2A2A]">
+        <img src="Heading 1.png" alt="" class=" w-[100%]">
+        <div class="flex justify-center pb-[40px] gap-[24px]">
+          <input type="text" id="input" placeholder="Search movies..." class="w-[200px] h-[39px] rounded-md "/>
+          <button id="it" class="w-[100px] h-[39px] bg-white rounded">A-Z</button>
+          <button id="itvacha" class="w-[100px] h-[39px] bg-white rounded">Z-A</button>
+          <details class="dropdown">
+  <summary class="btn m-1 bg-white w-[100px] h-[39px]  rounded items-center flex justify-center">Sort</summary>
+  <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-600 p-2 shadow-sm absolute bg-white rounded-lg ">
+      <li class="w-[100%] rounded text-white bg-black mb-1" id="music" ><button>Music </button></li>
+      <li class="w-[100%] rounded text-white bg-black mb-1" id="Doc"><button>Documentary</button></li>
+    <li class="w-[100%] rounded text-white bg-black mb-1" id="anim"><button>Animation</button></li>
+    <li class="w-[100%] rounded text-white bg-black mb-1" id="drama"><button>Drama</button></li>
+    <li class="w-[100%] rounded text-white bg-black mb-1" id="fam"><button>Family</button></li>
+    <li class="w-[100%] rounded text-white bg-black " id="Sport" ><button>Sport</button></li>
+
+  </ul>
+</details>
+<details class="dropdown">
+                    <summary class="btn m-1 bg-white w-[100px] h-[39px]  rounded items-center flex justify-center">Year</summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-600 p-2 shadow-sm absolute bg-white rounded-lg ">
+                        <li class="w-[100%] rounded text-white bg-black mb-1" id="twentyten" ><button>2010-2015 </button></li>
+                        <li class="w-[100%] rounded text-white bg-black mb-1" id="twentyfiv"><button>2015-2025</button></li>
+                    </ul>
+</div>
+</details>
+    </div>
+  <div class="max-w-[95%]  mx-auto">
+
+
+    <div id="wrapper" class="flex flex-wrap gap-[40px] mt-[20px]"></div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="movies.js"></script>
+</body>
+
+</html>
